@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="Wiki TeamFreiburg:chAMBER | iGEM competition 2022 | 11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.">
+  <meta name="author" content="iGEM-Team Freiburg 2022 @JonasWidder @AnneSmedegard">
+  <title>Integrated Human Practises | TeamFreiburg:chAMBER | iGEM2022</title>
+  <link rel="icon" type="image/x-icon" href="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/favicon.ico">
+
+  <!-- links -->
+  <!-- css external stylesheets -->
+  <link rel="stylesheet" href="static/slick.css">
+  <link rel="stylesheet" href="static/boxicons.min.css">
+  <!-- css internal stylesheets -->
+  <link rel="stylesheet" href="static/general.css">
+  <link rel="stylesheet" href="static/layout-elements.css">
+  <link rel="stylesheet" href="static/specific-styles.css">
+</head>
+
+<body>
+
+  <!-- ____________________________ main_navbar ____________________________ -->
+  <div class="main_navbar">
+
+    <!-- logo + team name -->
+    <a href="index.html" class="main_navbar_logo">
+      <img src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+      |
+      <span class="hidden_navtxt">
+         iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+      </span>
+      <span style="font-size:1.3rem;">ch</span>AMBER
+    </a>
+
+
+    <!-- navbar on small screens -->
+    <div id="smallNav" class="sn_overlay">
+
+      <!-- small navbar topbar with logo and close-btn -->
+      <div class="sn_topbar">
+        <!-- logo on sn-nav in top left corner -->
+        <a href="index.html">
+          <img class="sn_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+          <span class="sn_teamname">
+            |
+            <span class="hidden_navtxt">
+              iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+            </span>
+            <span style="font-size:1.3rem;">ch</span>AMBER
+          </span>
+        </a>
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="sn_closebtn" onclick="closeNav()"><i class='bx bx-x bx-md'></i></a>
+      </div>
+
+      <!-- small navbar content -->
+      <div class="sn_overlay_content">
+        <a class="active" href="index.html">Home</a>
+        <a onclick="sn_dropdownFnc1()" href="#1">
+          Project <i id="sn_arrow1" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown1">
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc2()" href="#1">
+          Experiments <i id="sn_arrow2" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown2">
+          <li><a href="protocols.html">Protocols</a></li>
+          <li><a href="labbook.html">Labbook</a></li>
+          <li><a href="safety.html">Safety</a></li>
+        </ul>
+        <a href="parts.html">Parts</a>
+        <a onclick="sn_dropdownFnc4()" href="#1">
+          Human Practices <i id="sn_arrow4" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown4">
+          <li><a href="human-practices.html">Integrated Human Practices</a></li>
+          <li><a href="communication.html">Education & Communication</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc5()" href="#1">
+          Team <i id="sn_arrow5" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown5">
+          <li><a href="team.html">Team Members</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <a href="awards.html">Medals/Awards</a>
+      </div>
+    </div>
+
+    <!-- menu-hamburger for open small navbar -->
+    <div id="sn_menu_bar">
+      <span onclick="openNav()"><i class='bx bx-menu bx-md' ></i></span>
+    </div>
+
+
+    <!-- nav (larger screens) -->
+    <nav class="main_nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Project</a>
+        <ul>
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Experiments</a>
+          <ul>
+            <li><a href="protocols.html">Protocols</a></li>
+            <li><a href="labbook.html">Labbook</a></li>
+            <li><a href="safety.html">Safety</a></li>
+          </ul>
+        </li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a class="active" href="#">Human Practices</a>
+          <ul>
+            <li><a class="active" href="human-practices.html">Integrated Human Practices</a></li>
+            <li><a href="communication.html">Education & Communication</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Team</a>
+          <ul>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+          </ul>
+        </li>
+        <li><a href="awards.html">Medals/Awards</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- _______________________________ header_______________________________ -->
+  <header class="sp_header">
+    <div class="sp_header_txt">
+      <h1>Integrated Human Practises</h1>
+    </div>
+  </header>
+
+  <!-- ______________________________ main ________________________________ -->
+  <main>
+  </main>
+
+
+  <!-- _______________________________ footer ______________________________ -->
+  <!-- yellow line starting the footer -->
+  <div class="footer_line"></div>
+
+  <footer>
+    <div class="container">
+
+      <!-- footer infos (about us, follow us, contact) -->
+      <div class="footer_infos grid grid_3">
+        <div>
+          <h2>About Us</h2>
+          <p class="justified">We are <b>"chAMBER"</b> from Freiburg, Germany! <br>
+            11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.</p>
+        </div>
+        <div class="footer_infoitem2">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a class="link" href="https://www.instagram.com/igem.freiburg/" target="_blank"><i class='bx bxl-instagram bx-sm'></i>Instagram</a></li>
+            <li><a class="link" href="https://twitter.com/FreiburgiGEM" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></i>Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer_infoitem3">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class='bx bxs-building-house bx-sm' ></i></i>University of Freiburg, GER</li>
+            <li><i class='bx bxs-envelope bx-sm' ></i></i>igem2022@cibss.uni-freiburg.de</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- sponsor-logo infinte carusel -->
+    <div class="f_carousel_container">
+      <section class="slider logo_carousel">
+        <div class="slide"><a href="https://www.snapgene.com/" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-snapgene.png" alt="link to Snapgene, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-uni-freiburg.png" alt="link to the university of Freiburg, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.cibss.uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-cibss.png" alt="link to CIBSS, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.geneious.com/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-geneious.png" alt="link to geneious, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://eu.idtdna.com/pages" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-idt.png" alt="link to IDT, one of our main sponsors"></a></div>
+      </section>
+    </div>
+
+    <!-- CreativeCommons licences + link to gitlab repository (worngly linked atm!!!) -->
+    <section class="footer_licensing myt-2">
+      <a class="link" href="https://gitlab.igem.org/2022/freiburg" target="_blank">gitlab.igem.org/2022/freiburg</a> | Creative Commons Attribution 4.0 License
+    </section>
+
+  </footer>
+
+
+  <!-- _____________________________ javascript links _________________________ -->
+  <script src="static/jquery-3-6-0.min.js"></script>
+  <script src="static/bootstrap.min.js"></script>
+  <script src="static/slick.min.js"></script>
+  <script src="static/three.min.js"></script>
+  <script src="static/gltf-loader.js"></script>
+  <script src="static/3d-models.js"></script>
+  <script src="static/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="Wiki TeamFreiburg:chAMBER | iGEM competition 2022 | 11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.">
+  <meta name="author" content="iGEM-Team Freiburg 2022 @JonasWidder @AnneSmedegard">
+  <title>Home | TeamFreiburg:chAMBER | iGEM2022</title>
+  <link rel="icon" type="image/x-icon" href="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/favicon.ico">
+
+  <!-- links -->
+  <!-- css external stylesheets -->
+  <link rel="stylesheet" href="static/slick.css">
+  <link rel="stylesheet" href="static/boxicons.min.css">
+  <!-- css internal stylesheets -->
+  <link rel="stylesheet" href="static/general.css">
+  <link rel="stylesheet" href="static/layout-elements.css">
+  <link rel="stylesheet" href="static/specific-styles.css">
+</head>
+
+<body>
+
+  <!-- ____________________________ main_navbar ____________________________ -->
+  <div class="main_navbar">
+
+    <!-- logo + team name -->
+    <a href="index.html" class="main_navbar_logo">
+      <img src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+      |
+      <span class="hidden_navtxt">
+         iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+      </span>
+      <span style="font-size:1.3rem;">ch</span>AMBER
+    </a>
+
+
+    <!-- navbar on small screens -->
+    <div id="smallNav" class="sn_overlay">
+
+      <!-- small navbar topbar with logo and close-btn -->
+      <div class="sn_topbar">
+        <!-- logo on sn-nav in top left corner -->
+        <a href="index.html">
+          <img class="sn_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+          <span class="sn_teamname">
+            |
+            <span class="hidden_navtxt">
+              iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+            </span>
+            <span style="font-size:1.3rem;">ch</span>AMBER
+          </span>
+        </a>
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="sn_closebtn" onclick="closeNav()"><i class='bx bx-x bx-md'></i></a>
+      </div>
+
+      <!-- small navbar content -->
+      <div class="sn_overlay_content">
+        <a class="active" href="index.html">Home</a>
+        <a onclick="sn_dropdownFnc1()" href="#1">
+          Project <i id="sn_arrow1" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown1">
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc2()" href="#1">
+          Experiments <i id="sn_arrow2" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown2">
+          <li><a href="protocols.html">Protocols</a></li>
+          <li><a href="labbook.html">Labbook</a></li>
+          <li><a href="safety.html">Safety</a></li>
+        </ul>
+        <a href="parts.html">Parts</a>
+        <a onclick="sn_dropdownFnc4()" href="#1">
+          Human Practices <i id="sn_arrow4" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown4">
+          <li><a href="human-practices.html">Integrated Human Practices</a></li>
+          <li><a href="communication.html">Education & Communication</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc5()" href="#1">
+          Team <i id="sn_arrow5" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown5">
+          <li><a href="team.html">Team Members</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <a href="awards.html">Medals/Awards</a>
+      </div>
+    </div>
+
+    <!-- menu-hamburger for open small navbar -->
+    <div id="sn_menu_bar">
+      <span onclick="openNav()"><i class='bx bx-menu bx-md' ></i></span>
+    </div>
+
+
+    <!-- nav (larger screens) -->
+    <nav class="main_nav">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#">Project</a>
+        <ul>
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Experiments</a>
+          <ul>
+            <li><a href="protocols.html">Protocols</a></li>
+            <li><a href="labbook.html">Labbook</a></li>
+            <li><a href="safety.html">Safety</a></li>
+          </ul>
+        </li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="#">Human Practices</a>
+          <ul>
+            <li><a href="human-practices.html">Integrated Human Practices</a></li>
+            <li><a href="communication.html">Education & Communication</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Team</a>
+          <ul>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="attributions.html">Attributions</a></li>
+          </ul>
+        </li>
+        <li><a href="awards.html">Medals/Awards</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- ____________________________ header _______________________________ -->
+  <header>
+    <section class="mp_header">
+      <div class="mp_header_3d_bmc"></div>
+      <div class="mp_header_otherstuff">
+        <div class="mp_header_txt">
+          <h2>Compartmentalization in bacteria?</h2>
+          <h1>Possible - with our toolbox!</h1>
+        </div>
+        <div class="arrow_down_anm"></div>
+        <div class="arrow_down_anm"></div>
+        <div class="arrow_down_anm"></div>
+      </div>
+    </section>
+  </header>
+
+
+  <!-- ______________________________ main ________________________________ -->
+  <main id="mp_main">
+
+    <!-- lila section-intro part: subheader with introductive words -->
+    <section class="mp_end_videoscroll section_intro_bg_2 flex" style="background-color:var(--sec-color); color:#fff;">
+      <h2 class="subtitles">What is chAMBER?</h2>
+    </section>
+
+
+    <!-- short project-description/background to project (flipcards linked together, etc) -->
+    <section class="mp_bg_description">
+      <section class="container grid_4 mp_description_largescreen">
+
+        <!-- flipcard 1 -->
+        <div class="item1 card_container">
+          <div class="flipcard">
+              <div class="flipcard_front">
+                  <a>
+                    <h3>Compartmentalization in bacteria</h3>
+                    Background-infos. Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                  </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-com.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- linker between flipcards -->
+        <div class="item3"> </div>
+        <div class="item3_1">
+          <h7 class="txt_anim_in_from_left_obj">What&nbsp;to&nbsp;do&nbsp;about&nbsp;it?</h7>
+        </div>
+
+        <!-- flipcard 2 -->
+        <div class="item4 card_container">
+          <div class="flipcard">
+              <div class="flipcard_front">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+              </div>
+              <div class="flipcard_back">
+                <a>
+                  <h3>Our approach - creating a BMC toolbox</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- linker between flipcards -->
+        <div class="item5"> </div>
+        <div class="item5_1">
+          <h7 class="txt_anim_in_from_right_obj">Which&nbsp;compartments?</h7>
+        </div>
+
+        <!-- flipcard 3 -->
+        <div class="item6 card_container">
+          <div class="flipcard">
+              <div class="flipcard_front">
+                <a>
+                  <h3>Whiffleball, Encapsulin and SPD-5</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- linker between flipcards -->
+        <div class="item7"> </div>
+        <div class="item7_1">
+          <h7 class="txt_anim_in_from_left_obj2">Optimize&nbsp;the&nbsp;system?</h7>
+        </div>
+
+        <!-- flipcard 4 -->
+        <div class="item8 card_container">
+          <div class="flipcard">
+              <div class="flipcard_front">
+                <a>
+                  <h3>Use of ncAAs and genome-reduced strains</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- linker between flipcards -->
+        <div class="item9"> </div>
+        <div class="item9_1">
+          <h7 class="txt_anim_in_from_right_obj2">Possible&nbsp;applications?</h7>
+        </div>
+
+        <!-- flipcard 5 -->
+        <div class="item10 card_container">
+          <div class="flipcard">
+              <div class="flipcard_front">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-com.jpeg" alt="">
+              </div>
+              <div class="flipcard_back">
+                <a>
+                  <h3>Bioproduction of Indigo/Indirubin & Trehalose</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- linker between flipcards -->
+      <div class="item11"> </div>
+      <div class="item11_1">
+        <h7 class="txt_anim_in_from_left_obj3">Want&nbsp;to&nbsp;know&nbsp;more&nbsp;about&nbsp;it?</h7>
+      </div>
+
+      <!-- flipcard 6 -->
+      <div class="item12">
+        <button class="button_1">
+          <a class="link" href="description.html"><h3>Learn more!</h3></a>
+        </button>
+      </div>
+
+      </section>
+
+      <!-- description content for small screens (flipcards undereath centered) -->
+      <section class="container mp_description_smallsize">
+
+        <!-- flipcard 1 -->
+        <div class="card_container">
+          <div id="mp_flipcard1" class="flipcard">
+              <div class="flipcard_front">
+                  <a>
+                    <h3>Compartmentalization in bacteria</h3>
+                    Background-infos. Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                  </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-com.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- flipcard 2 -->
+        <div class="card_container">
+          <div id="mp_flipcard2" class="flipcard">
+              <div class="flipcard_front">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+              </div>
+              <div class="flipcard_back">
+                <a>
+                  <h3>Our approach - creating a BMC toolbox</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- flipcard 3 -->
+        <div class="card_container">
+          <div id="mp_flipcard3" class="flipcard">
+              <div class="flipcard_front">
+                <a>
+                  <h3>Whiffleball, Encapsulin and SPD-5</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- flipcard 4 -->
+        <div class="card_container">
+          <div id="mp_flipcard4" class="flipcard">
+              <div class="flipcard_front">
+                <a>
+                  <h3>Use of ncAAs and genome-reduced strains</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+              </div>
+              <div class="flipcard_back">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-in.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- flipcard 5 -->
+        <div class="card_container">
+          <div id="mp_flipcard5" class="flipcard">
+              <div class="flipcard_front">
+                <img src="https://static.igem.wiki/teams/4229/wiki/pictures/mp-flipcard-com.jpeg" alt="">
+              </div>
+              <div class="flipcard_back">
+                <a>
+                  <h3>Bioproduction of Indigo/Indirubin & Trehalose</h3>
+                  Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo.Lorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum doloLorem ipsum dolor sit amet,  sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolo
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 6 -->
+      <div class="flex">
+        <button class="button_1">
+          <a class="link" href="description.html"><h3>Learn more!</h3></a>
+        </button>
+      </div>
+
+      </section>
+
+      <section class="container mp_description_smallestsize">
+        Here should be the content of description, in seperated cards for texts and images (not flipable)! For smallest screens (mobile most likely).
+      </section>
+    </section>
+
+
+
+    <!-- lila section-intro part: intro to textboxes with introduction-infos to other subsites -->
+    <section class="section_intro_bg_2 flex ">
+      <h1 class="container subtitles">Interested in more details?</h1>
+    </section>
+
+    <!-- grid with introduction-infos about the other sub-site-contents + links to them (formed as boxes) -->
+    <div class="mp_gridpart">
+      <div class="container grid mp_grid">
+
+        <!-- Box 1 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-pencil"></i>
+          <h2>Design</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-pencil"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              From idea to finished project is a long way and requires many cycles of trial and error. Learn about how we made our way through the design process:
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="design.html">
+            <button class="button_1">Learn more</button>
+          </a>
+
+        </section>
+
+        <!-- Box 2 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-chart-simple"></i>
+          <h2>Achievements & Next steps</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-chart-simple"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              After long hours in the lab and constant cycles of improving we managed to finish our project with some great results :)
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="results.html"><button class="button_1">Results</button></a>
+          <a href="model.html"><button class="button_1">Modelling</button></a>
+          <a href="proof-of-concept.html"><button class="button_1">Proof of concept</button></a>
+          <a href="implementation.html"><button class="button_1">Proposed Implementation</button></a>
+        </section>
+
+        <!-- Box 3 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-flask"></i>
+          <h2>Experiments</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-flask"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute deserunt mollit anim id est laborum.
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="protocols.html"><button class="button_1">Protocols</button></a>
+          <a href="labbook.html"><button class="button_1">Labbook</button></a>
+          <a href="safety.html"><button class="button_1">Safety</button></a>
+        </section>
+
+        <!-- Box 4 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-handshake-angle"></i>
+          <h2>From iGEMers - for iGEMers</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-handshake-angle"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              Through our project we improved existing biobricks and gave back to the iGEM community through ***. Futhermore, we collaborated with the Paris iGEM team. Read more here!
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="collaborations.html"><button class="button_1">Collaborations</button></a>
+          <a href="contribution.html"><button class="button_1">Contribution</button></a>
+          <a href="parts.html"><button class="button_1">Parts</button></a>
+        </section>
+
+        <!-- Box 5 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-earth-americas"></i>
+          <h2>Outreach</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-earth-americas"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              Our project also seeked to adress questions related the overall research environment. We seeked to understand why research struggles with an increase in misconduct and falsification. Moreover, we wanted educate ourself on how to deal with stress during an intense iGEM season.
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="human-practices.html"><button class="button_1">Integrated Human Practises</button></a>
+          <a href="communication.html"><button class="button_1">Education & Communication</button></a>
+        </section>
+
+        <!-- Box 6 -->
+        <section class="mp_gridbox">
+          <i class="mp_othersites_smallpage_i fa fa-solid fa-people-group"></i>
+          <h2>Team</h2>
+          <i class="mp_othersites_largepage_i fa fa-solid fa-people-group"></i>
+          <br>
+          <!-- textbox in box -->
+          <div class="mp_gridbox_txtcontainer">
+            <div class="justified">
+              This years iGEM project from Freiburg wouldn't have come to life without the help from a large group of contributers and of course the hardworking iGEMMERs. Learn more about them here!
+            </div>
+          </div>
+          <!-- button-link to subsites -->
+          <a href="team.html"><button class="button_1">Team Members</button></a>
+          <a href="attributions.html"><button class="button_1">Attributions</button></a>
+
+
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ________________________________ project video _______________________ -->
+    <!-- lila section-intro part: video-title -->
+    <section class="mp_video_title flex">
+      <h2 class="subtitles text-center">Our project video</h2>
+    </section>
+
+    <!-- video -->
+    <section class="py-4">
+      <div class="flex container">
+       <iframe title="Freiburg: Enter the chAMBER, a place full of revelations! (2022) - Project Promotion [English]" src="https://video.igem.org/videos/embed/3cee2445-49a1-42db-9469-398874cccc67" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="1200" height="600" frameborder="0"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- _______________________________ footer ______________________________ -->
+  <!-- yellow line starting the footer -->
+  <div class="footer_line"></div>
+
+  <footer>
+    <div class="container">
+
+      <!-- footer infos (about us, follow us, contact) -->
+      <div class="footer_infos grid grid_3">
+        <div>
+          <h2>About Us</h2>
+          <p class="justified">We are <b>"chAMBER"</b> from Freiburg, Germany! <br>
+            11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.</p>
+        </div>
+        <div class="footer_infoitem2">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a class="link" href="https://www.instagram.com/igem.freiburg/" target="_blank"><i class='bx bxl-instagram bx-sm'></i>Instagram</a></li>
+            <li><a class="link" href="https://twitter.com/FreiburgiGEM" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></i>Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer_infoitem3">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class='bx bxs-building-house bx-sm' ></i></i>University of Freiburg, GER</li>
+            <li><i class='bx bxs-envelope bx-sm' ></i></i>igem2022@cibss.uni-freiburg.de</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- sponsor-logo infinte carusel -->
+    <div class="f_carousel_container">
+      <section class="slider logo_carousel">
+        <div class="slide"><a href="https://www.snapgene.com/" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-snapgene.png" alt="link to Snapgene, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-uni-freiburg.png" alt="link to the university of Freiburg, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.cibss.uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-cibss.png" alt="link to CIBSS, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.geneious.com/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-geneious.png" alt="link to geneious, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://eu.idtdna.com/pages" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-idt.png" alt="link to IDT, one of our main sponsors"></a></div>
+      </section>
+    </div>
+
+    <!-- CreativeCommons licences + link to gitlab repository (worngly linked atm!!!) -->
+    <section class="footer_licensing myt-2">
+      <a class="link" href="https://gitlab.igem.org/2022/freiburg" target="_blank">gitlab.igem.org/2022/freiburg</a> | Creative Commons Attribution 4.0 License
+    </section>
+
+  </footer>
+
+
+  <!-- _____________________________ javascript links _________________________ -->
+  <script src="static/jquery-3-6-0.min.js"></script>
+  <script src="static/bootstrap.min.js"></script>
+  <script src="static/slick.min.js"></script>
+  <script src="static/three.min.js"></script>
+  <script src="static/gltf-loader.js"></script>
+  <script src="static/3d-models.js"></script>
+  <script src="static/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="Wiki TeamFreiburg:chAMBER | iGEM competition 2022 | 11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.">
+  <meta name="author" content="iGEM-Team Freiburg 2022 @JonasWidder @AnneSmedegard">
+  <title>Attributions | TeamFreiburg:chAMBER | iGEM2022</title>
+  <link rel="icon" type="image/x-icon" href="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/favicon.ico">
+
+  <!-- links -->
+  <!-- css external stylesheets -->
+  <link rel="stylesheet" href="static/slick.css">
+  <link rel="stylesheet" href="static/boxicons.min.css">
+  <!-- css internal stylesheets -->
+  <link rel="stylesheet" href="static/general.css">
+  <link rel="stylesheet" href="static/layout-elements.css">
+  <link rel="stylesheet" href="static/specific-styles.css">
+</head>
+
+<body>
+
+  <!-- ____________________________ main_navbar ____________________________ -->
+  <div class="main_navbar">
+
+    <!-- logo + team name -->
+    <a href="index.html" class="main_navbar_logo">
+      <img src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+      |
+      <span class="hidden_navtxt">
+         iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+      </span>
+      <span style="font-size:1.3rem;">ch</span>AMBER
+    </a>
+
+
+    <!-- navbar on small screens -->
+    <div id="smallNav" class="sn_overlay">
+
+      <!-- small navbar topbar with logo and close-btn -->
+      <div class="sn_topbar">
+        <!-- logo on sn-nav in top left corner -->
+        <a href="index.html">
+          <img class="sn_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/general-design/logo-chamber.png" alt="teamlogo of chAMBER, Freiburgs iGEM team 2022">
+          <span class="sn_teamname">
+            |
+            <span class="hidden_navtxt">
+              iGEM Freiburg 2022 <span style="font-family:txt_font;font-size:14px;">presents</span>
+            </span>
+            <span style="font-size:1.3rem;">ch</span>AMBER
+          </span>
+        </a>
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="sn_closebtn" onclick="closeNav()"><i class='bx bx-x bx-md'></i></a>
+      </div>
+
+      <!-- small navbar content -->
+      <div class="sn_overlay_content">
+        <a class="active" href="index.html">Home</a>
+        <a onclick="sn_dropdownFnc1()" href="#1">
+          Project <i id="sn_arrow1" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown1">
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc2()" href="#1">
+          Experiments <i id="sn_arrow2" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown2">
+          <li><a href="protocols.html">Protocols</a></li>
+          <li><a href="labbook.html">Labbook</a></li>
+          <li><a href="safety.html">Safety</a></li>
+        </ul>
+        <a href="parts.html">Parts</a>
+        <a onclick="sn_dropdownFnc4()" href="#1">
+          Human Practices <i id="sn_arrow4" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown4">
+          <li><a href="human-practices.html">Integrated Human Practices</a></li>
+          <li><a href="communication.html">Education & Communication</a></li>
+        </ul>
+        <a onclick="sn_dropdownFnc5()" href="#1">
+          Team <i id="sn_arrow5" class='bx bx-chevron-down'></i>
+        </a>
+        <ul id="sn_dropdown5">
+          <li><a href="team.html">Team Members</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+        <a href="awards.html">Medals/Awards</a>
+      </div>
+    </div>
+
+    <!-- menu-hamburger for open small navbar -->
+    <div id="sn_menu_bar">
+      <span onclick="openNav()"><i class='bx bx-menu bx-md' ></i></span>
+    </div>
+
+
+    <!-- nav (larger screens) -->
+    <nav class="main_nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Project</a>
+        <ul>
+          <li><a href="description.html">Description</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="model.html">Modelling</a></li>
+          <li><a href="engineering.html">Engineering Success</a></li>
+          <li><a href="proof-of-concept.html">Proof of concept</a></li>
+          <li><a href="implementation.html">Proposed Implementation</a></li>
+          <li><a href="contribution.html">Contribution</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Experiments</a>
+          <ul>
+            <li><a href="protocols.html">Protocols</a></li>
+            <li><a href="labbook.html">Labbook</a></li>
+            <li><a href="safety.html">Safety</a></li>
+          </ul>
+        </li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="#">Human Practices</a>
+          <ul>
+            <li><a href="human-practices.html">Integrated Human Practices</a></li>
+            <li><a href="communication.html">Education & Communication</a></li>
+          </ul>
+        </li>
+        <li><a class="active" href="#">Team</a>
+          <ul>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a class="active" href="attributions.html">Attributions</a></li>
+          </ul>
+        </li>
+        <li><a href="awards.html">Medals/Awards</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- _______________________________ header_______________________________ -->
+  <header class="sp_header">
+    <div class="sp_header_txt">
+      <h1>Attributions</h1>
+    </div>
+  </header>
+
+
+  <!-- ______________________________ main ________________________________ -->
+  <main>
+    <div class="container">
+
+      <!-- ______________________ Introduction __________________ -->
+      <section>
+        <div class="justified myt-3">
+          We, the iGEM team Freiburg 2022, thank all our supporters! For giving us the confidence to carry out our own research project with great independence and to go beyond our former limits. For accompanying us on this path with advice and help of a financial, material and mental nature. For standing by us from the beginning of our project with the first brainstorming sessions at the end of February 2022, to going to the lab and conducting experiments since the end of May, to the last minute at the Giant Jamboree where we present our work.
+        </div>
+      </section>
+      <hr class="hr_bold">
+
+      <div class="flex_flexstart py-2">
+
+        <!-- subordinated navigation -->
+        <div>
+          <section class="sub_nav sn_col_1">
+            <ul>
+              <li><a href="#atr_team"><strong>Team-Attribution</strong></a>
+                <ul>
+                </ul>
+              </li>
+            <br>
+              <li><a href="#atr_supervisors"><strong>Supervisors-Attribution</strong></a>
+                <ul>
+                </ul>
+              </li>
+            <br>
+              <li><a href="#atr_other"><strong>Other&nbsp;acknowledgements</strong></a>
+                <ul>
+                </ul>
+              </li>
+            <br>
+            <li><a href="#atr_sponsors"><strong>Sponsors</strong></a>
+              <ul>
+              </ul>
+            </li>
+          <br>
+            </ul>
+          </section>
+        </div>
+
+
+        <!-- content: attributions -->
+        <div>
+
+          <!-- __________________ Team attributions ______________________ -->
+          <section id="atr_team">
+            <h2>Team attributions</h2>
+            <!-- info, what all team members were involved and description, what the list items below mean -->
+            <p class="myb-1 justified">
+              Everyone in our team has put a lot of time, energy and effort into our project this summer! <br>
+              And it has been worth it! We can proudly say that we managed to build a project where, from the initial ideas,
+              over the wet and dry lab work, to the design of the wiki and video, every aspect was done by ourselves, with only
+              little support needed from our supervisors and other colleagues (<a class="link" href="#atr_supervisors">see their attribution</a>). <br>
+              Many aspects of the project involved the whole team. The most important are:
+            </p>
+            <ul class="list_1 myb-1">
+              <li>Brainstorming to find and flesh out the project topic at the beginning</li>
+              <li>Researching literature on the topic</li>
+              <li>Making sure safety rules were followed</li>
+              <li>Participating in lab maintenance (preparing plates, media, pipette tips, cleaning, etc.)</li>
+              <li>Writing texts for the wiki</li>
+            </ul>
+            <p class="myb-1 justified">
+              For the wet lab, we divided ourselves into three subgroups (Pathways, Compartments, ncAAs), each of which organised itself. In weekly full
+              team meetings, we informed each other about the news of the subgroups. Each subgroup planned their experiments, conducted
+              and evaluated them and wrote/visualised their results independently. But of course, we also helped each other between the subgroups :) <br>
+              In addition, some team members did extra work for the project. These additional efforts, as well as subgroup affiliation are listed below as bullet points for each team member.
+            </p>
+
+            <!-- attributions of each team member -->
+            <div class="grid1_2">
+              <div>
+                <span class="special_txt">Nikita Edel</span>, B.Sc. Biology student
+                <div class="grid1_2">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/nikita-placeholder.jpg" alt="Portrait picture of Nikita Edel, teammember of iGEM Freiburg 2022">
+                  <ul>
+                    <li>Trehalose pathway</li>
+                    <li>Human Practises & Education/Communication</li>
+                    <li>Parts</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <span class="special_txt">Anne Frederiksen</span>, M.Sc. Biology student
+                <div class="grid1_2">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/nikita-placeholder.jpg" alt="Portrait picture of Nikita Edel, teammember of iGEM Freiburg 2022">
+                  <ul>
+                    <li>Compartments</li>
+                    <li>Human Practises & Education/Communication</li>
+                    <li>Wiki</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid1_2">
+              <div>
+                <span class="special_txt">Selene Franchini</span>, M.Sc. Biology student
+                <div class="grid1_2">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/nikita-placeholder.jpg" alt="Portrait picture of Nikita Edel, teammember of iGEM Freiburg 2022">
+                  <ul>
+                    <li>Compartments</li>
+                    <li>Social Media</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <span class="special_txt">Johanna Gerstenecker</span>, M.Sc. Biochemistry & Biophysics
+                <div class="grid1_2">
+                  <img src="https://static.igem.wiki/teams/4229/wiki/pictures/nikita-placeholder.jpg" alt="Portrait picture of Nikita Edel, teammember of iGEM Freiburg 2022">
+                  <ul>
+                    <li>ncAAs</li>
+                    <li>Human Practises & Education/Communication</li>
+                    <li>Modelling</li>
+                    <li>Fundraising</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ___________________ Supervisors attributions _____________ -->
+          <section id="atr_supervisors" class="myb-2">
+            <h2>Supervisor attributions</h2>
+
+            <div class="underlined_title_sc">
+              <span class="special_txt">Prof. Dr. Barbara Di Ventura</span>, Prof. for biological signalling research at the University of Freiburg / BIOSS
+            </div>
+            <p class="myb-1">
+              Barbara brought a lot of impulses to the project, but at the same time she was also a critical voice who questioned in the right places whether things were feasible in the way we imagined them. With her many years of experience, she was also a great help in interpreting unexpected results. She could also hand us over to experts from her lab and beyond when specific questions came up.
+            </p>
+
+            <div class="underlined_title_fc">
+              <span class="special_txt">Dr. Nicole Gensch</span>, Labmanager at the CIBBS
+            </div>
+            <p class="myb-1">
+              Nicole was always on hand. No matter whether the ligase ran out, the plasmid design stalled or something else went wrong. You could ask Nicole and Nicole helped you, both with material and with her expertise around the lab. She was also a great help with the finances, had good tips for fundraising and knew the possibilities to save money when shopping materials.
+            </p>
+
+            <div class="underlined_title_fc">
+              <span class="special_txt">Dr. Pavel Salavei</span>, Postdoc in protein laboratory at the CIBSS
+            </div>
+            <p class="myb-1">
+              As an expert in protein purification, Pavel was able to provide us with many useful tips on how best to produce and quantify our substances (indigo, trehalose, BMCs, etc.). He was also able to introduce us to the equipment needed for this, such as Plate Readers.
+            </p>
+
+            <div class="underlined_title_sc">
+              <span class="special_txt">Paulina Kaas</span>, M.Sc. Mol.Medicine student at the University of Freiburg
+            </div>
+            <p>
+              Since Paulina used to participate in iGEM herself, she knew a thing or two about what to pay special attention to in this competition. Especially in improving and creating BioBricks, she was able to give important advice on what is required of them and how to submit and register. She was also a diligent reader of our wiki and other public texts and gave helpful feedback on how to phrase them better.
+            </p>
+          </section>
+
+          <!-- ________________________ Other acknowledgements _____________ -->
+          <section id="atr_other" class="myb-2">
+            <h2>Other acknowledgements</h2>
+            <ul>
+              <li><span class="bold">Prof. Dr. Cheryl Kerfeld and the Kerfeld Lab</span>, for providing us bacterial microcompartment plasmids to work with.</li>
+              <li><span class="bold">Prof. Dr. Anthony Forster</span>, for giving us an interview on the topics of research integrity and noncanonical amino-acids.</li>
+              <li><span class="bold">PD Dr. Joachim Boldt</span>, for giving us an interview on the topic of research integrity with focus on ethics.</li>
+              <li><span class="bold">Dr. Chris van der Does</span>, for giving us an interview on the topic of research integrity with focus on education.</li>
+              <li><span class="bold">Prof. Dr. Sonja-Verena Albers</span>, for giving us an interview on the topic of research integrity with focus on detection, prevention, etc at universities.</li>
+              <li><span class="bold">Piyush Gupta</span>, for the public relations support of our project through inviting us to and performing an interview session.</li>
+              <li><span class="bold">Michele Garfinkel</span>, for collaborating with us in our online workshop on "research integrity" for iGEM participants and giving a talk there.</li>
+              <li><span class="bold">Michal Rössler</span>, for advice on how to present the video in the most comprehensible way possible.</li>
+              <li><span class="bold">Prof. Dr. Sonja-Verena Albers and Albers Lab</span>, for sharing their plate reader and lab materials like plates with us when we were in need.</li>
+              <li><span class="bold">Prof. Dr. Barbara Di Ventura and Di Ventura Lab</span>, for providing plasmids and bacteria and sharing their fluorescence microscope.</li>
+              <li><span class="bold">Prof. Dr. Maja Köhn and Köhn Lab</span>, for sharing their incubators with us.</li>
+            </ul>
+          </section>
+
+          <!-- _____________________ Sponsors _________________________ -->
+          <section id="atr_sponsors">
+            <h2 class="myb-1">Our sponsors</h2>
+            <div class="grid grid_4_1">
+              <a href="https://www.biolegend.com/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-biolegend.png" alt="link to BioLegend, one of our sponsors"></a>
+              <a href="https://www.carlroth.com/de/de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-cibss.png" alt="placeholder link to CarlRoth, one of our sponsors"></a>
+              <a href="https://www.cibss.uni-freiburg.de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-cibss.png" alt="link to CIBSS, one of our main sponsors"></a>
+              <a href="https://www.eurofins.de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-eurofins.png" alt="link to Eurofins, one of our sponsors"></a>
+              <a href="https://igem.org/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-igem-impactgrant.png" alt="link to iGEM, one of our main sponsors via the iGEM impact grant"></a>
+              <a href="https://www.fishersci.de/de/de/home.html" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-fisherscientific.png" alt="link to FisherScientific, one of our sponsors"></a>
+              <a href="https://www.geneious.com/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-geneious.png" alt="link to Geneious, one of our main sponsors"></a>
+              <a href="https://www.gbo.com/de-de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-greiner.png" alt="link to Greiner, one of our sponsors"></a>
+              <a href="https://eu.idtdna.com/pages" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-idt.png" alt="link to IDT, one of our main sponsors"></a>
+              <a href="https://www.jenabioscience.com/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-jenabioscience.png" alt="link to JenaBioscience, one of our sponsors"></a>
+              <a href="https://international.neb.com/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-neb.png" alt="link to NEB, one of our sponsors"></a>
+              <a href="https://www.promega.de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-promega.png" alt="link to Promega, one of our sponsors"></a>
+              <a href="https://www.snapgene.com/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-snapgene.png" alt="link to Snapgene, one of our main sponsors"></a>
+              <a href="https://www.sparkasse.de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-sparkasse.png" alt="link to Sparkasse, one of our sponsors"></a>
+              <!-- <a href="https://www.twistbioscience.com/de/" target="_blank"><img src="pictures/sponsor-logos/logo-CIBSS.png" alt="placeholder link to Twist, one of our sponsors"></a> -->
+              <a href="https://uni-freiburg.de/" target="_blank"><img style="width: 100px;padding-left: 1.7rem;" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-uni-freiburg.png" alt="link to the university of Freiburg, one of our main sponsors"></a>
+              <a href="https://www.zymoresearch.de/" target="_blank"><img src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-zymoresearch.png" alt="link to ZymoResearch, one of our sponsors"></a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+        <h2 class="subtitles text-center myb-1">Thank you. | Dankeschön.</h2>
+
+    </div>
+  </main>
+
+
+  <!-- _______________________________ footer ______________________________ -->
+  <!-- yellow line starting the footer -->
+  <div class="footer_line"></div>
+
+  <footer>
+    <div class="container">
+
+      <!-- footer infos (about us, follow us, contact) -->
+      <div class="footer_infos grid grid_3">
+        <div>
+          <h2>About Us</h2>
+          <p class="justified">We are <b>"chAMBER"</b> from Freiburg, Germany! <br>
+            11 enthusiastic young scientists creating a toolbox for compartmentalization in bacteria for future synthetic biology applications and beyond.</p>
+        </div>
+        <div class="footer_infoitem2">
+          <h2>Follow Us</h2>
+          <ul>
+            <li><a class="link" href="https://www.instagram.com/igem.freiburg/" target="_blank"><i class='bx bxl-instagram bx-sm'></i>Instagram</a></li>
+            <li><a class="link" href="https://twitter.com/FreiburgiGEM" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></i>Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer_infoitem3">
+          <h2>Contact Us</h2>
+          <ul>
+            <li><i class='bx bxs-building-house bx-sm' ></i></i>University of Freiburg, GER</li>
+            <li><i class='bx bxs-envelope bx-sm' ></i></i>igem2022@cibss.uni-freiburg.de</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- sponsor-logo infinte carusel -->
+    <div class="f_carousel_container">
+      <section class="slider logo_carousel">
+        <div class="slide"><a href="https://www.snapgene.com/" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-snapgene.png" alt="link to Snapgene, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-uni-freiburg.png" alt="link to the university of Freiburg, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.cibss.uni-freiburg.de/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-cibss.png" alt="link to CIBSS, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://www.geneious.com/" target="_blank"><img class="f_larger_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-geneious.png" alt="link to geneious, one of our main sponsors"></a></div>
+        <div class="slide"><a href="https://eu.idtdna.com/pages" target="_blank"><img class="f_smaller_logo" src="https://static.igem.wiki/teams/4229/wiki/pictures/sponsor-logos/logo-idt.png" alt="link to IDT, one of our main sponsors"></a></div>
+      </section>
+    </div>
+
+    <!-- CreativeCommons licences + link to gitlab repository (worngly linked atm!!!) -->
+    <section class="footer_licensing myt-2">
+      <a class="link" href="https://gitlab.igem.org/2022/freiburg" target="_blank">gitlab.igem.org/2022/freiburg</a> | Creative Commons Attribution 4.0 License
+    </section>
+
+  </footer>
+
+
+  <!-- _____________________________ javascript links _________________________ -->
+  <script src="static/jquery-3-6-0.min.js"></script>
+  <script src="static/bootstrap.min.js"></script>
+  <script src="static/slick.min.js"></script>
+  <script src="static/three.min.js"></script>
+  <script src="static/gltf-loader.js"></script>
+  <script src="static/3d-models.js"></script>
+  <script src="static/main.js"></script>
+
+
+</body>
+</html>
