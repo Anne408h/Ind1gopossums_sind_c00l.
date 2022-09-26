@@ -37,7 +37,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("bmc-outlined.gltf", function(gltf) {
+  loader.load("https://static.igem.wiki/teams/4229/wiki/bmc-outlined.gltf", function(gltf) {
 
 
     bmc = gltf.scene.children[0];
