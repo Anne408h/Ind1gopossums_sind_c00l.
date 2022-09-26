@@ -1,0 +1,411 @@
+/* color-scheme + other var */
+:root {
+  --first-color: #FFAC00;
+  --sec-color: #8C5FEE;
+  --special-color: #CBB6FA; /* for small things to point out/highlight */
+  --alarm-color: #FF0000; /* for active links, alerts, etc. */
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+/* ____________________________ font-families ______________________________ */
+
+@font-face {
+  font-family: title_font;
+  src: url(https://static.igem.wiki/teams/4229/wiki/webfonts/bebas-font-regular.ttf);
+}
+@font-face {
+  font-family: txt_font;
+  src: url(https://static.igem.wiki/teams/4229/wiki/webfonts/quicksand-varfont.ttf);
+}
+
+
+/* _____________________________________ general _____________________________ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+body {
+  font-family: txt_font;
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ______________________________ img-designs ______________________________________ */
+img {
+  max-width: 100%;
+}
+/* img description */
+.img_desc {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  color: #3B3B3B;
+  text-align: center;
+}
+
+/* _______________________________ box-design-bg __________________________ */
+.box_1 {
+	background: #8C5FEE2E;
+  margin: 15px 0;
+  margin-left: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+
+/* ___________________________ buttons ___________________________________ */
+.button_1 {
+  position: relative;
+  color: #000;
+  background-color: #e9e9ed;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  padding: 20px 30px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 8%;
+  border-color: transparent;
+  cursor: pointer;
+}
+.button_1:hover {
+  background-color: #c6c6d4;
+}
+.button_1:active {
+  background-color: #9a9ab7;
+}
+
+/* pdf download buttons */
+.pdf_download_fc {
+  color: var(--first-color);
+  text-decoration: none;
+}
+.pdf_download_sc {
+  color: var(--sec-color);
+  text-decoration: none;
+}
+.pdf_download_fc i, .pdf_download_sc i {
+  font-size: 24px;
+}
+
+/* _____________________________________ tables ____________________________ */
+.table_1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+.table_1 th, .table_1 td {
+  padding: 5px;
+  text-align: left;
+}
+.table_1 tr:first-child {
+  border-bottom: 1px #000000 solid;
+  background-color: var(--sec-color);
+  color: #ffffff;
+}
+.table_1 .link_parent {
+  width: 100px;
+}
+@media screen and (max-width: 418px) {
+   .pa_table_seqrow {
+     display: none;
+   }
+}
+
+/* _____________________________________ lists ____________________________ */
+.list_1 {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* _____________________________________ border lines ____________________________ */
+.hr_bold {
+  margin-top: 15px;
+  border: 5px solid var(--sec-color);
+}
+.hr_slim_fc {
+  border: 1px solid var(--first-color);
+}
+
+/* ____________________________________ layout-forms _______________________ */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.flex_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.flex_flexstart {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid1_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.grid_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid_4_1 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid_4 {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+}
+.grid_5 {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1px;
+  background-color: #fff;
+}
+
+/* ________________________________ text-styling ___________________________ */
+/* link-design with first color (fc) and second */
+.link {
+  color: var(--sec-color);
+  font-weight: normal;
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--sec-color);
+  font-weight: bolder;
+  transition: all 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+.link_fc {
+  color: var(--first-color);
+  text-decoration: none;
+}
+.link_fc:hover {
+  color: var(--first-color);
+  font-weight: bolder;
+}
+
+/* special text design */
+.special_txt {
+    font-family: title_font;
+    font-size: 1.5rem;
+}
+
+/* simple txt underline for titles */
+.underlined_title_fc {
+  border-bottom: 3px solid var(--first-color);
+}
+.underlined_title_sc {
+  border-bottom: 3px solid var(--sec-color);
+}
+
+/* text-reveal animations */
+.txt_anim_in_from_left {
+  width: 100%;
+  text-align: right;
+  animation: left_to_right 1s ease-out;
+}
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+.txt_anim_in_from_right {
+  width: 100%;
+  animation: right_to_left 1s ease-out;
+}
+@keyframes right_to_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.cursive {
+  font-style: italic;
+}
+
+/* headlines */
+h1 {
+  font-family: title_font;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+.subtitles {
+  font-family: title_font;
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* font-size */
+.lead {
+  font-size: 20px;
+}
+.sm {
+  font-size: 1rem;
+}
+.md {
+  font-size: 2rem;
+}
+.lg {
+  font-size: 3rem;
+}
+.xl {
+  font-size: 4rem;
+}
+/* font-weight */
+.light {
+  font-weight: lighter;
+}
+.bolder {
+  font-weight: bolder;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* text-align */
+.text-center {
+  text-align: center;
+}
+.justified {
+  text-align: justify;
+}
+
+/* ___________________________________ margin and padding ___________________ */
+/* Margin */
+.myt-1{
+  margin-top: 0.5rem;
+}
+.myt-2{
+  margin-top: 1.2rem;
+}
+.myt-3{
+  margin-top: 1.5rem;
+}
+.myb-1{
+  margin-bottom: 1rem;
+}
+.myb-2{
+  margin-bottom: 1.5rem;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+.my-5 {
+  margin: 4rem 0;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 1.5rem;
+}
+.m-3 {
+  margin: 2rem;
+}
+.m-4 {
+  margin: 3rem;
+}
+.m-5 {
+  margin: 4rem;
+}
+
+/* Padding */
+.px-1 {
+  padding: 0 1rem;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+.py-5 {
+  padding: 4rem 0;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 3rem;
+}
+.p-5 {
+  padding: 4rem;
+}
