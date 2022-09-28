@@ -312,7 +312,7 @@
 
 .sub_nav_wrap {
   position: relative;
-  background-image: url("pictures/side.png");
+  background-image: src "https://static.igem.wiki/teams/4229/wiki/pictures/side.png";
 	background-size: contain;
   height: auto;
   width: auto;
@@ -353,7 +353,7 @@
   font-weight: bolder;
 	transition: all 0.2s;
 }
-}
+
 @media screen and (max-width: 740px) {
 	.sub_nav {
 	  width: 210px;
