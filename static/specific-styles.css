@@ -242,7 +242,7 @@ h7 {
 
 /* MP-grid styling (for part giving first infos about other subsites) */
 .mp_gridpart {
-  background-image: url(https://static.igem.wiki/teams/4229/wiki/pictures/grid-line.jpeg);
+  background-image: url("https://static.igem.wiki/teams/4229/wiki/grid-line.png");
   padding-bottom: 30px;
 }
 .mp_grid {
