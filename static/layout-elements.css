@@ -307,17 +307,28 @@
 	text-align: center;
 	z-index: 1;
 }
-
-/* ____________________ subordinated navbar on sub-sides ____________________ */
+* ____________________ subordinated navbar on sub-sides ____________________ */
 /* !!! has to come after header-css in order !!! */
+
+.sub_nav_wrap {
+  position: relative;
+  background-image: url("pictures/side.png");
+	background-size: contain;
+  height: auto;
+  width: auto;
+  margin-right: 20px;
+}
+
 .sub_nav {
-	top: 22vh;
+	top: 20vh;
+	/* height: 375px; */
   width: 300px;
   position: -webkit-sticky;
 	position: sticky;
-  background-color: var(--special-color);
+  background-color: #fff;
   border-radius: 5% 5%;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
   opacity: 0.95;
 }
 .sub_nav ul {
@@ -326,16 +337,22 @@
   padding-top: 10px;
     width: 250px;
 }
+
+
 .sub_nav a {
   text-decoration: none;
 	color: #000;
+
 }
+
 .sub_nav ul li ul {
   border-top: 2px solid #fff;
 }
+
 .sub_nav a:hover {
   font-weight: bolder;
 	transition: all 0.2s;
+}
 }
 @media screen and (max-width: 740px) {
 	.sub_nav {
@@ -390,6 +407,25 @@
   text-align: left;
 }
 
+/* ______________________________ Lines __________________________________ */
+.line-1 {
+	height: 4px;
+	background:#AF87F6;
+	  margin-top: 15px;
+  }
+  .line-2 {
+	height: 1px;
+	background: #000;
+	  margin-top: 5px;
+  }
+  .text_block {
+	margin-right: 30px;
+  }
+  .line-3{
+	  background: #8C5FEE2E;
+	height: 5px;
+  }
+  
 /* ______________________________ footer __________________________________ */
 .footer_line {
 	width: 100%;
