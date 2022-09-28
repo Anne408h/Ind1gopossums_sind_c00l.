@@ -147,7 +147,9 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.grey{
+  background-color: #F1EFEF;
+}
 .flex {
   display: flex;
   justify-content: center;
