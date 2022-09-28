@@ -382,16 +382,18 @@ h7 {
 .item_hp1 {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
+  padding-top: 50px;
 }
 .item_hp2 {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  padding-left: 150px;
+  padding-left: 100px;
+  padding-top: 50px;
 }
 .item_hp3 {
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
-  padding-left: 230px;
+  padding-left: 200px;
 }
 .item_hp4 {
   grid-column: 4 / span 1;
@@ -415,7 +417,23 @@ h7 {
     grid-row: 3 / span 1;
     padding-left: 100px;
 }
-
+.item_hp10 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.scroll_box {
+	width: 132vh;
+	height: 700px;
+	font-size: 14px;
+	line-height: 1.5rem;
+	overflow:scroll;
+	padding:15px;
+	background-color: #DDDDDD;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+	}
 /* ______________________________ Team members __________________________________ */
 .team_compartment {
   --s: 350px; /* control the size of img */
@@ -585,4 +603,25 @@ h7 {
 }
 .team_modal_body img {
   width: 300px;
+}
+/* ___________________________ Team Members - Annes______________________________________ */
+.team {
+  border-radius: 10%;
+  text-align: center;
+  font-size: 15px;
+}
+.wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper img{
+  width: auto;
+  height: 100%;
+  border-radius: 10% 10% 0% 0%;
+}
+.grad {
+  background: -webkit-linear-gradient(#8C5FEE 0%, rgba(186,152,219,1) 50%, #FFAC00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
