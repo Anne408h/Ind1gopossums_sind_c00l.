@@ -203,6 +203,13 @@ img {
   gap: 1px;
   background-color: #fff;
 }
+.grid_6 {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1px;
+  background-color: #fff;
+}
 
 /* ________________________________ text-styling ___________________________ */
 /* link-design with first color (fc) and second */
