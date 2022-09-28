@@ -434,6 +434,14 @@ h7 {
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
 	}
+
+  .link_hp a {
+    text-decoration: none;
+    color: #000;
+  }
+  .link_hp a:hover {
+    color: var(--sec-color);
+  }
 /* ______________________________ Team members __________________________________ */
 .team_compartment {
   --s: 350px; /* control the size of img */
