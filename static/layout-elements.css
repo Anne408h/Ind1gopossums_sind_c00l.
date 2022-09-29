@@ -329,12 +329,11 @@
   border-radius: 5% 5%;
   margin-left: 10px;
   margin-right: 0px;
-  opacity: 0.95;
+  opacity: 0.90;
 }
 .sub_nav ul {
   list-style: none;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 10px;
     width: 250px;
 }
 
