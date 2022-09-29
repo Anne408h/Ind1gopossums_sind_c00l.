@@ -36,8 +36,12 @@ function init() {
   container.appendChild(renderer.domElement);
 
   //Load Model
-  let loader = new THREE.GLTFLoader();
-  loader.load("https://static.igem.wiki/teams/4229/wiki/bmc-outlined.gltf", function(gltf) {
+  var gltfLoader = new THREE.GLTFLoader();
+  var dracoLoader = new THREE.DRACOLoader();
+  dracoLoader.setDecoderPath( 'static/' )
+  gltfLoader.setDRACOLoader( dracoLoader );
+  
+  gltfLoader.load("https://static.igem.wiki/teams/4229/wiki/bmc-outlined-compressed.gltf", function(gltf) {
 
 
     bmc = gltf.scene.children[0];
