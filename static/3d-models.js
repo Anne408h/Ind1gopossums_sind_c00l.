@@ -41,7 +41,7 @@ function init() {
   dracoLoader.setDecoderPath( 'static/' )
   gltfLoader.setDRACOLoader( dracoLoader );
   
-  gltfLoader.load("https://static.igem.wiki/teams/4229/wiki/bmc-outlined-compressed.gltf", function(gltf) {
+  gltfLoader.load("https://static.igem.wiki/teams/4229/wiki/three-d-obj/bmc-outlined-compressed.gltf", function(gltf) {
 
 
     bmc = gltf.scene.children[0];
