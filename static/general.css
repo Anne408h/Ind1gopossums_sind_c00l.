@@ -390,6 +390,9 @@ hb {
 .m-5 {
   margin: 4rem;
 }
+.m-6 {
+  margin-right: 30px;
+}
 
 /* Padding */
 .px-1 {
