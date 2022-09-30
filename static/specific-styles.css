@@ -254,7 +254,6 @@ h7 {
   margin: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 10px;
   height: 85%;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -266,6 +265,7 @@ h7 {
 }
 .mp_gridbox .button_1 {
   padding: 12px 18px;
+  text-align: left;
 }
 .mp_gridbox h2 {
   margin-top: 18px;
@@ -302,6 +302,8 @@ h7 {
   margin-bottom: 40px;
   margin-right: 20px;
   height: 110px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 /* mp_gridbox icons */
 .mp_gridbox .fa {
