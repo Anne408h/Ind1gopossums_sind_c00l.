@@ -86,7 +86,7 @@ $(document).ready(function logo_slider() {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     // speed: 8000,
     cssEase: 'ease-out',
     arrows: false,
